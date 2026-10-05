@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Allan Kimosop Kipkemboi | AI Data Specialist</title>
+<meta name="description" content="Allan Kimosop Kipkemboi is an AI data specialist in Nairobi, Kenya, working on LLM evaluation, RLHF, and multimodal data annotation across text, image, video, LiDAR, and audio.">
+<meta property="og:title" content="Allan Kimosop Kipkemboi | AI Data Specialist">
+<meta property="og:description" content="LLM evaluation, RLHF, and multimodal data annotation. Nairobi, Kenya. Available for remote work worldwide.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b6e8a'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EAK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--h-bg:#eaf3f6;--h-g1:#bfe1ec;--h-g2:#e0d8fa;--h-ink:#0f1c25;--h-muted:#3f5360;--h-line:rgba(15,28,37,.28);--h-chip:rgba(15,28,37,.07);--h-panel:#fff;--h-btn:#0b6e8a;--h-btn-ink:#fff;--h-link:#0b6e8a;--h-input:#fff;--bg:#f4f7f8;--card:#fff;--ink:#0f1c25;--muted:#51616c;--line:#d7e0e5;--accent:#0b6e8a;--tint:#e3f0f4;--warn:#fff3c4;--hero:#0a2530;--llm:#8b5cf6;--vis:#2f80ed;--aud:#f2994a;--lang:#27ae60;--qa:#e0457b;
+--head:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;--body:"Public Sans","Segoe UI",Arial,sans-serif}
+[data-theme=dark]{--h-bg:#071a22;--h-g1:#17607a;--h-g2:#3a2a78;--h-ink:#eef5f8;--h-muted:#cfe0e8;--h-line:rgba(255,255,255,.3);--h-chip:rgba(255,255,255,.12);--h-panel:rgba(6,20,27,.55);--h-btn:#4fb8d6;--h-btn-ink:#06222c;--h-link:#8fd6ea;--h-input:rgba(255,255,255,.08);--bg:#0b131a;--card:#13212b;--ink:#e8eef2;--muted:#9fb0bb;--line:#243642;--accent:#4fb8d6;--tint:#10303c;--warn:#4a3d0a;--hero:#071a22}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--body)}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--llm),var(--vis),var(--lang),var(--aud));z-index:20}
+header.top{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px;padding-top:10px;padding-bottom:10px}
+.brand{font:800 1.05rem var(--head);color:var(--ink);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.92rem;padding:5px 12px;border-radius:999px}
+nav a:hover{color:var(--ink)}
+nav a.on{background:var(--tint);color:var(--accent)}
+#theme{font:500 .85rem var(--body);border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:5px 14px;cursor:pointer}
+section{padding:72px 0}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:12px;letter-spacing:-.01em}
+h3{font-size:1.15rem}
+p{margin:0 0 14px;max-width:66ch}
+.sub{color:var(--muted);margin-bottom:32px}
+.hero{background:radial-gradient(circle at 85% 10%,var(--h-g1) 0,transparent 55%),radial-gradient(circle at 10% 90%,var(--h-g2) 0,transparent 45%),var(--h-bg);color:var(--h-ink);padding:72px 0 110px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6.2vw,4.6rem);font-weight:800;letter-spacing:-.03em}
+.role{display:inline-block;background:var(--h-chip);border:1px solid var(--h-line);padding:4px 14px;border-radius:999px;font-weight:500;font-size:.92rem;margin-bottom:18px}
+.lead{font-size:1.18rem;margin:22px 0 28px;color:var(--h-muted)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 24px;border-radius:8px;font:600 1rem var(--body);text-decoration:none;border:2px solid var(--h-btn);cursor:pointer;transition:transform .15s}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:var(--h-btn);color:var(--h-btn-ink)}
+.btn.ghost{background:transparent;color:var(--h-ink);border-color:var(--h-line)}
+.demo{background:var(--h-panel);border:1px solid var(--h-line);border-radius:14px;padding:14px}
+.modes{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.mode{font:500 .85rem var(--body);color:var(--h-ink);background:transparent;border:1px solid var(--h-line);border-radius:999px;padding:5px 14px;cursor:pointer}
+.mode[aria-pressed=true]{background:var(--h-btn);border-color:var(--h-btn);color:var(--h-btn-ink);font-weight:600}
+#scene{display:block;width:100%;height:auto;border-radius:8px}
+.l{opacity:0;transition:opacity .4s}.l-seg{clip-path:inset(0 100% 0 0);transition:clip-path 1.4s ease,opacity .4s}.l .tr{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.3s ease}.lb{opacity:0;transition:opacity .3s}
+#scene[data-mode=box] .l-box,#scene[data-mode=poly] .l-poly,#scene[data-mode=seg] .l-seg{opacity:1}#scene[data-mode=seg] .l-seg{clip-path:inset(0 0 0 0)}#scene[data-mode=box] .l-box .tr,#scene[data-mode=poly] .l-poly .tr{stroke-dashoffset:0}#scene[data-mode=box] .lb{opacity:1;transition-delay:1s}
+#cap{font-size:.9rem;margin:10px 2px 6px;color:var(--h-muted);min-height:1.5em}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.82rem;color:var(--h-muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px}
+.stats{margin-top:-56px;position:relative;z-index:2;padding:0}
+.stats .wrap>div{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 32px rgba(8,30,40,.14)}
+.stat{padding:22px 24px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font:800 2.3rem var(--head);color:var(--accent);line-height:1}
+.stat span{color:var(--muted);font-size:.9rem}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.tile{grid-column:span 2;padding:24px;border-radius:14px;border:1px solid var(--line);border-top:5px solid var(--c);background:color-mix(in srgb,var(--c) 11%,var(--card))}
+.tile.w3{grid-column:span 3}.tile.w6{grid-column:span 6}
+.tile h3{margin:12px 0 8px}
+.tile p{margin:0;color:var(--muted);font-size:.96rem}
+.tag{display:inline-block;background:var(--c);color:#fff;font-size:.78rem;font-weight:600;padding:2px 10px;border-radius:999px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:14px 0 0;list-style:none}
+.chips li{background:var(--card);border:1px solid var(--line);padding:4px 14px;border-radius:999px;font-size:.9rem}
+.tint{background:var(--tint)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.f{font:500 .92rem var(--body);background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 16px;cursor:pointer}
+.f[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.case{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;position:relative;overflow:hidden}
+.case[hidden]{display:none}
+.case::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--c)}
+.case h3{margin:10px 0 2px}
+.where{color:var(--muted);font-size:.9rem;margin-bottom:10px}
+.case p{font-size:.95rem;margin:0 0 8px}
+.job{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c);border-radius:10px;margin-bottom:10px}
+.job summary{cursor:pointer;list-style:none;display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;padding:14px 18px;font-weight:600}
+.job summary::-webkit-details-marker{display:none}
+.job summary::after{content:"+";font:700 1.3rem var(--head);color:var(--c);order:3;margin-left:auto}
+.job[open] summary::after{content:"\2212"}
+.job .d{color:var(--muted);font-weight:400;font-size:.9rem}
+.job p{padding:0 18px 14px;margin:0;color:var(--muted);font-size:.95rem}
+.todo{background:var(--warn);padding:0 6px;border-radius:3px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:28px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.box p{margin:8px 0 0;color:var(--muted)}
+.contact{background:var(--h-bg);color:var(--h-ink);border-top:1px solid var(--line)}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.contact a{color:var(--h-link)}
+.contact p{color:var(--h-muted)}
+[data-theme=dark] body{background:linear-gradient(135deg,#0c1828 0%,#1b1425 24%,#23131e 48%,#1b2118 70%,#101b20 100%);isolation:isolate}
+#light-bg{position:fixed;inset:0;z-index:0;display:none;pointer-events:none;background:radial-gradient(ellipse at 14% 14%,rgba(224,216,250,.58),transparent 52%),radial-gradient(ellipse at 86% 37%,rgba(191,225,236,.68),transparent 52%),radial-gradient(ellipse at 24% 88%,rgba(224,216,250,.38),transparent 56%),linear-gradient(130deg,#eaf3f6,#f4f7f8 52%,#eaf3f6)}
+html:not([data-theme=dark]) #light-bg{display:block}
+#shift-bg{position:fixed;inset:0;z-index:0;display:none;width:100%;height:100%;opacity:.9;pointer-events:none}
+[data-theme=dark] #shift-bg{display:block}
+main,footer{position:relative;z-index:1}
+[data-theme=dark] .hero{background:radial-gradient(ellipse at 82% 0%,rgba(23,96,122,.28),transparent 58%),linear-gradient(155deg,rgba(7,26,34,.36),transparent 75%)}
+[data-theme=dark] .tint{background:transparent}
+[data-theme=dark] .contact{background:transparent;border-top-color:transparent}
+html:not([data-theme=dark]) .hero,html:not([data-theme=dark]) .tint,html:not([data-theme=dark]) .contact{background:transparent}
+html:not([data-theme=dark]) .contact{border-top-color:transparent}
+.links{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:6px}
+form{display:grid;gap:14px}
+label{font-weight:500;display:grid;gap:4px}
+input,textarea{font:inherit;padding:11px 12px;border:1px solid var(--h-line);border-radius:8px;background:var(--h-input);color:var(--h-ink)}
+footer{padding:26px 0;color:var(--muted);font-size:.9rem;text-align:center}
+footer .bg-credit{display:none;font-size:.75rem}
+[data-theme=dark] footer .bg-credit{display:block}
+@media (max-width:820px){.hero .wrap,.contact .wrap{grid-template-columns:1fr}.bento{grid-template-columns:1fr}.tile,.tile.w3,.tile.w6{grid-column:auto}.stat{border-right:0;border-bottom:1px solid var(--line)}section{padding:52px 0}}
+.lift{position:relative;transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--ty,0px)) translateZ(var(--tz,0px)) scale(var(--sc,1));transition:transform .32s cubic-bezier(.22,1.3,.36,1),box-shadow .3s ease,opacity .3s ease}
+.lift::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .25s;background:radial-gradient(circle at var(--mx,50%) var(--my,30%),rgba(255,255,255,.45),transparent 60%)}
+.lift.up,.lift.mid{--ty:-8px;--tz:60px;--sc:1.05;z-index:10;box-shadow:0 36px 60px -12px rgba(8,30,40,.38),0 14px 26px rgba(8,30,40,.2)}
+.lift.up::after,.lift.mid::after{opacity:1}
+.job.lift.up,.job.lift.mid{--ty:-2px;--tz:30px;--sc:1.03}
+.box.lift.up,.box.lift.mid{--ty:-4px}
+.bento:has(.up,.mid) .lift:not(.up):not(.mid),.cases:has(.up,.mid) .lift:not(.up):not(.mid){--sc:.97;opacity:.82}
+[data-theme=dark] .lift.up,[data-theme=dark] .lift.mid{box-shadow:0 36px 60px -12px rgba(0,0,0,.75),0 14px 26px rgba(0,0,0,.5)}
+[data-theme=dark] .lift::after{background:radial-gradient(circle at var(--mx,50%) var(--my,30%),rgba(255,255,255,.16),transparent 60%)}
+@media (prefers-reduced-motion:reduce){.lift{transform:none!important}}
+</style>
+</head>
+<body>
+<div id="light-bg" aria-hidden="true"></div>
+<canvas id="shift-bg" aria-hidden="true"></canvas>
+<div id="bar"></div>
+<header class="top"><div class="wrap">
+<a class="brand" href="#top">Allan Kimosop Kipkemboi</a>
+<nav aria-label="Main"><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a><button id="theme" type="button" aria-pressed="false">Dark mode</button></nav>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap">
+<div>
+<span class="role">AI data specialist</span>
+<h1>Allan Kimosop Kipkemboi</h1>
+<p class="lead">I build and quality-check the training data behind language, vision, and speech models: LLM evaluation, RLHF, and multimodal annotation.</p>
+<div class="btns"><a class="btn primary" href="resume.pdf">Download CV</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+</div>
+<div class="demo" aria-label="Interactive annotation demo">
+<div class="modes" role="group" aria-label="Annotation type">
+<button class="mode" data-m="raw" type="button">Raw</button><button class="mode" data-m="box" type="button">Boxes</button><button class="mode" data-m="poly" type="button">Polygons</button><button class="mode" data-m="seg" type="button">Segmentation</button>
+</div>
+<svg id="scene" viewBox="0 0 480 300" role="img" aria-label="Animated street scene: cars at a crossing with pedestrians walking, shown raw and with bounding boxes, polygons and semantic segmentation"></svg>
+<p id="cap" aria-live="polite"></p>
+<div class="legend"><span><i style="background:#804080"></i>Road</span><span><i style="background:#f423e8"></i>Sidewalk</span><span><i style="background:#464646"></i>Building</span><span><i style="background:#6b8e23"></i>Vegetation</span><span><i style="background:#4682b4"></i>Sky</span><span><i style="background:#00008e"></i>Car</span><span><i style="background:#dc143c"></i>Person</span><span><i style="background:#999999"></i>Pole</span><span><i style="background:#dcdc00"></i>Sign</span><span><i style="background:#faaa1e"></i>Traffic light</span></div>
+</div>
+</div></section>
+
+<section class="stats"><div class="wrap"><div>
+<div class="stat"><b><span data-to="6">6</span>+</b><span>years working on AI training data</span></div>
+<div class="stat"><b><span data-to="10000">10,000</span>+</b><span>signals a week in one RLHF pipeline</span></div>
+<div class="stat"><b><span data-to="15">15</span>%</b><span>drop in user-reported factual errors</span></div>
+<div class="stat"><b><span data-to="20">20</span>%</b><span>fewer multimodal annotation errors</span></div>
+</div></div></section>
+
+<section id="about"><div class="wrap">
+<h2>About</h2>
+<p>I have worked on AI training data since 2020, across full-time, community, and freelance roles. My work covers ranking and scoring LLM outputs, labeling autonomous-driving footage and LiDAR point clouds, preparing speech datasets, and translating medical content from English to Swahili.</p>
+<p>I am completing a B.Tech in Chemical Engineering, which is where my habits around process control, measurement, and consistent quality come from. I apply the same discipline to annotation guidelines, cross-annotator agreement, and validation with Python and SQL.</p>
+</div></section>
+
+<section id="services" class="tint"><div class="wrap">
+<h2>What I do</h2>
+<p class="sub">Six areas of data work, each with clear guidelines and a quality check.</p>
+<div class="bento">
+<div class="tile w3" style="--c:var(--llm)"><span class="tag">Language</span><h3>LLM evaluation and RLHF</h3><p>Ranking, scoring, and aligning model outputs against clear guidelines and evaluation criteria.</p></div>
+<div class="tile w3" style="--c:var(--vis)"><span class="tag">Vision</span><h3>Computer vision annotation</h3><p>Bounding boxes, polygons, semantic segmentation, and 3D LiDAR point-cloud labeling.</p></div>
+<div class="tile" style="--c:var(--aud)"><span class="tag">Audio</span><h3>Speech and audio data</h3><p>Transcription for speech recognition, audio classification, and speaker diarization.</p></div>
+<div class="tile" style="--c:var(--vis)"><span class="tag">Vision</span><h3>Video annotation</h3><p>Labeling actions, gestures, and events across frame sequences.</p></div>
+<div class="tile" style="--c:var(--lang)"><span class="tag">Localization</span><h3>English to Swahili</h3><p>Medical and technical translation that reads naturally to Swahili speakers.</p></div>
+<div class="tile w6" style="--c:var(--qa)"><span class="tag">Quality</span><h3>Data quality assurance</h3><p>Guideline interpretation, cross-annotator consistency checks, and validation workflows.</p>
+<ul class="chips"><li>Python</li><li>SQL</li><li>CVAT</li><li>Labelbox</li><li>Remotasks</li><li>Data validation</li></ul></div>
+</div></div></section>
+
+<section id="work"><div class="wrap">
+<h2>Selected work</h2>
+<p class="sub">Described in general terms to respect client confidentiality. Filter by type.</p>
+<div class="filters" role="group" aria-label="Filter projects">
+<button class="f" data-f="all" aria-pressed="true" type="button">All</button><button class="f" data-f="llm" aria-pressed="false" type="button">LLM</button><button class="f" data-f="vision" aria-pressed="false" type="button">Vision</button><button class="f" data-f="audio" aria-pressed="false" type="button">Audio</button><button class="f" data-f="lang" aria-pressed="false" type="button">Language</button>
+</div>
+<div class="cases">
+<article class="case" data-c="llm" style="--c:var(--llm)"><span class="tag" style="--c:var(--llm)">LLM</span><h3>LLM evaluation and RLHF</h3><div class="where">Mercor</div><p><b>Task.</b> Rank and score model outputs and standardize evaluation processes.</p><p><b>Outcome.</b> Processed 10,000+ signals a week, contributed to a 15% drop in user-reported factual errors, and cut multimodal annotation errors by 20%.</p></article>
+<article class="case" data-c="vision" style="--c:var(--vis)"><span class="tag" style="--c:var(--vis)">Vision</span><h3>Autonomous driving perception</h3><div class="where">Mindy Support</div><p><b>Task.</b> Label video sequences and telemetry graphs: vehicles, road features, and vulnerable road users.</p><p><b>Outcome.</b> Classified edge cases such as yielding, overtaking, and queue-following while holding strict accuracy benchmarks.</p></article>
+<article class="case" data-c="audio" style="--c:var(--aud)"><span class="tag" style="--c:var(--aud)">Audio</span><h3>Speech recognition datasets</h3><div class="where">Uber AI Solutions</div><p><b>Task.</b> Transcribe, segment, and classify audio for intent, sentiment, and acoustic events.</p><p><b>Outcome.</b> Ran quality checks on the datasets to improve language-understanding accuracy.</p></article>
+<article class="case" data-c="vision" style="--c:var(--vis)"><span class="tag" style="--c:var(--vis)">Vision</span><h3>Human action labeling in video</h3><div class="where">Atlas Capture</div><p><b>Task.</b> Label actions, gestures, and activities across video frames.</p><p><b>Outcome.</b> Kept annotation schemas consistent across large datasets to support high inter-annotator agreement.</p></article>
+<article class="case" data-c="lang" style="--c:var(--lang)"><span class="tag" style="--c:var(--lang)">Language</span><h3>Medical translation for AI</h3><div class="where">Intron Health</div><p><b>Task.</b> Translate and localize medical and technical terms from English to Swahili.</p><p><b>Outcome.</b> Delivered accurate, culturally fluent text on schedule for healthcare NLP datasets.</p></article>
+</div>
+</div></section>
+
+<section id="experience" class="tint"><div class="wrap">
+<h2>Experience</h2>
+<p class="sub">Select a role to see what I did.</p>
+<details class="job" style="--c:var(--llm)" open><summary><span>Community Lead and Contributor, LeanGoogs AI</span><span class="d">Aug 2026 to present</span></summary><p>Onboard and coordinate regional contributors; label and align vision and NLP datasets; support quality audits.</p></details>
+<details class="job" style="--c:var(--vis)"><summary><span>AI Trainer, Mindy Support</span><span class="d">Sep 2026 to present</span></summary><p>Annotate autonomous-driving video and telemetry data.</p></details>
+<details class="job" style="--c:var(--lang)"><summary><span>Generalist Data Annotator, OpenTrain AI</span><span class="d">May 2026 to present</span></summary><p>Tag and annotate text, audio, and image datasets.</p></details>
+<details class="job" style="--c:var(--aud)"><summary><span>Data Annotator, Uber AI Solutions</span><span class="d">Apr 2026 to Aug 2026</span></summary><p>Produced and quality-checked audio datasets for speech recognition.</p></details>
+<details class="job" style="--c:var(--vis)"><summary><span>Video Annotation Specialist, Atlas Capture</span><span class="d">Dec 2025 to Jun 2026</span></summary><p>Labeled temporal sequences for supervised learning.</p></details>
+<details class="job" style="--c:var(--lang)"><summary><span>Translator, Intron Health</span><span class="d">Aug 2024 to May 2026</span></summary><p>English to Swahili translation for AI in healthcare.</p></details>
+<details class="job" style="--c:var(--llm)"><summary><span>General Data Annotation Expert, Mercor</span><span class="d">Feb 2023 to Sep 2023</span></summary><p>LLM evaluation, ranking, and RLHF data work.</p></details>
+<details class="job" style="--c:var(--qa)"><summary><span>Data Analyst, CloudFactory</span><span class="d">Sep 2022 to Dec 2023</span></summary><p>Python and SQL analysis, validation workflows, and KPI reporting.</p></details>
+<details class="job" style="--c:var(--vis)"><summary><span>AI Data Annotator, Remotasks</span><span class="d">Jan 2020 to Aug 2022</span></summary><p>3D LiDAR labeling, multilingual audio transcription, and intent classification.</p></details>
+<details class="job" style="--c:var(--aud)"><summary><span>Chemical Engineer Intern, East African Breweries PLC</span><span class="d">Oct 2020 to Sep 2021</span></summary><p>Process data tracking, control measurements, and mass transfer analysis.</p></details>
+<div class="two">
+<div class="box"><h3>Education</h3><p>B.Tech in Chemical Engineering<br>The Technical University of Kenya, expected 2027</p></div>
+<div class="box"><h3>Languages</h3><p>English: native<br>Swahili: native<br>German: professional working proficiency</p></div>
+</div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<div>
+<h2>Let's work together</h2>
+<p>Open to AI data, LLM evaluation, and annotation roles, remote or on contract.</p>
+<ul class="links"><li><a href="mailto:allankimm09@gmail.com">allankimm09@gmail.com</a></li><li><a href="tel:+254745956337">+254 745 956 337</a></li><li><a href="https://www.linkedin.com/in/allankipkemboi-55bb81358" rel="noopener">LinkedIn profile</a></li></ul>
+<button class="btn ghost" id="copy" type="button">Copy email</button>
+</div>
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<input type="hidden" name="form-name" value="contact">
+<input type="hidden" name="subject" value="New message from your portfolio website">
+<p hidden><label>Leave this empty<input name="bot-field"></label></p>
+<label>Name<input type="text" name="name" required autocomplete="name"></label>
+<label>Email<input type="email" name="email" required autocomplete="email"></label>
+<label>Message<textarea name="message" rows="5" required></textarea></label>
+<button class="btn primary" type="submit">Send message</button>
+<p id="status" role="status" aria-live="polite"></p>
+</form>
+</div></section>
+</main>
+<footer>&copy; 2026 Allan Kimosop Kipkemboi<small class="bg-credit">Dark background: <a href="https://github.com/SeanFree" rel="noopener">Shift by Sean Free</a>, via <a href="https://tympanus.net/codrops/?p=36743" rel="noopener">Codrops</a>. Noise: <a href="https://github.com/jwagner/simplex-noise.js/blob/main/LICENSE" rel="noopener">Simplex Noise by Jonas Wagner (MIT)</a>.</small></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/simplex-noise@2.4.0/simplex-noise.js"></script>
+<script>
+(()=>{const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches,root=document.documentElement;
+let saved;try{saved=localStorage.getItem('theme')}catch(e){}
+const setTheme=t=>{root.dataset.theme=t;const b=$('#theme');b.textContent=t==='dark'?'Light mode':'Dark mode';b.setAttribute('aria-pressed',t==='dark')};
+setTheme(saved||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));
+const shiftCanvas=$('#shift-bg'),shiftCtx=shiftCanvas.getContext('2d'),shiftBuffer=document.createElement('canvas'),shiftBufferCtx=shiftBuffer.getContext('2d');
+const shiftNoise=typeof SimplexNoise==='function'?new SimplexNoise():null,shiftCircles=[];
+let shiftWidth=0,shiftHeight=0,shiftScale=1,shiftFrame=0,shiftPhase=220;
+const resetShiftCircle=c=>{const angle=Math.random()*Math.PI*2,speed=.04+Math.random()*.16;c.x=Math.random()*shiftWidth;c.y=Math.random()*shiftHeight;c.vx=Math.cos(angle)*speed;c.vy=Math.sin(angle)*speed;c.ttl=360+Math.random()*300;c.life=Math.random()*c.ttl;c.radius=120+Math.random()*160};
+const resizeShift=()=>{shiftWidth=innerWidth;shiftHeight=innerHeight;shiftScale=Math.min(devicePixelRatio||1,1.25);[shiftCanvas,shiftBuffer].forEach(c=>{c.width=Math.round(shiftWidth*shiftScale);c.height=Math.round(shiftHeight*shiftScale)});shiftCtx.setTransform(shiftScale,0,0,shiftScale,0,0);shiftBufferCtx.setTransform(shiftScale,0,0,shiftScale,0,0);shiftCircles.length=0};
+const initShift=()=>{const count=Math.min(42,Math.max(18,Math.round(shiftWidth*shiftHeight/30000)));for(let i=0;i<count;i++){const c={};resetShiftCircle(c);shiftCircles.push(c)}};
+const shiftPalette=[[24,38,85],[49,29,62],[73,25,43],[85,24,38],[67,39,27],[53,55,31],[16,55,61],[12,31,47]];
+const shiftColorAt=position=>{const wrapped=((position%shiftPalette.length)+shiftPalette.length)%shiftPalette.length,start=Math.floor(wrapped),blend=wrapped-start,a=shiftPalette[start],b=shiftPalette[(start+1)%shiftPalette.length];return`rgb(${a.map((channel,i)=>Math.round(channel+(b[i]-channel)*blend)).join(',')})`};
+const drawShift=()=>{shiftBufferCtx.clearRect(0,0,shiftWidth,shiftHeight);shiftPhase+=.35;shiftCircles.forEach(c=>{const fade=Math.abs((c.life+c.ttl/2)%c.ttl-c.ttl/2)/(c.ttl/2),noise=shiftNoise?shiftNoise.noise3D(c.x*.0015,c.y*.0015,shiftPhase*.0015):Math.sin(c.x*.003+shiftPhase*.009)*Math.cos(c.y*.003-shiftPhase*.007),color=shiftColorAt(shiftPhase/360*shiftPalette.length+noise*1.3);shiftBufferCtx.fillStyle=color.replace('rgb(','rgba(').replace(')',`,${fade*.78})`);shiftBufferCtx.beginPath();shiftBufferCtx.arc(c.x,c.y,c.radius,0,Math.PI*2);shiftBufferCtx.fill();c.x+=c.vx;c.y+=c.vy;c.life++;if(c.life>c.ttl||c.x < -c.radius||c.x>shiftWidth+c.radius||c.y < -c.radius||c.y>shiftHeight+c.radius)resetShiftCircle(c)});shiftCtx.clearRect(0,0,shiftWidth,shiftHeight);shiftCtx.save();shiftCtx.filter='blur(58px)';shiftCtx.drawImage(shiftBuffer,0,0,shiftWidth,shiftHeight);shiftCtx.restore();if(root.dataset.theme==='dark'&&!document.hidden)shiftFrame=requestAnimationFrame(drawShift);else shiftFrame=0};
+const syncShift=()=>{if(!shiftCtx||!shiftBufferCtx)return;if(root.dataset.theme!=='dark'||document.hidden){if(shiftFrame)cancelAnimationFrame(shiftFrame);shiftFrame=0;shiftCtx.clearRect(0,0,shiftWidth,shiftHeight);return}if(!shiftWidth)resizeShift();if(!shiftCircles.length)initShift();if(!shiftFrame)shiftFrame=requestAnimationFrame(drawShift)};
+addEventListener('resize',()=>{resizeShift();syncShift()},{passive:true});document.addEventListener('visibilitychange',syncShift);syncShift();
+$('#theme').onclick=()=>{const t=root.dataset.theme==='dark'?'light':'dark';setTheme(t);syncShift();try{localStorage.setItem('theme',t)}catch(e){}};
+const bar=$('#bar');addEventListener('scroll',()=>{const h=root.scrollHeight-innerHeight;bar.style.width=(h>0?scrollY/h*100:0)+'%'},{passive:true});
+const links=$$('nav a');const nio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.hash==='#'+e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});
+$$('main section[id]').forEach(s=>nio.observe(s));
+const modes={raw:'Raw frame: what the annotator receives.',box:'Bounding boxes: one tight rectangle per object, tracked as people walk.',poly:'Polygons: vertex-by-vertex outlines that follow each object.',seg:'Semantic segmentation: every pixel gets a class.'};
+const svg=$('#scene'),cap=$('#cap'),mb=$$('.mode');let auto;
+const setMode=m=>{svg.dataset.mode=m;cap.textContent=modes[m];mb.forEach(b=>b.setAttribute('aria-pressed',b.dataset.m===m))};
+mb.forEach(b=>b.onclick=()=>{clearInterval(auto);setMode(b.dataset.m)});
+setMode(rm?'box':'raw');
+if(!rm){const o=['raw','box','poly','seg'];let i=0;auto=setInterval(()=>{i=(i+1)%4;setMode(o[i])},4200)}
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;cio.unobserve(e.target);const el=e.target,t=+el.dataset.to;if(rm)return;const s=performance.now();const f=n=>{const p=Math.min((n-s)/1200,1);el.textContent=Math.round(t*(1-Math.pow(1-p,3))).toLocaleString();if(p<1)requestAnimationFrame(f)};requestAnimationFrame(f)}));
+$$('[data-to]').forEach(el=>{if(!rm)el.textContent='0';cio.observe(el)});
+$$('.f').forEach(b=>b.onclick=()=>{$$('.f').forEach(x=>x.setAttribute('aria-pressed',x===b));const c=b.dataset.f;$$('.case').forEach(a=>a.hidden=!(c==='all'||a.dataset.c===c))});
+const cp=$('#copy');cp.onclick=async()=>{try{await navigator.clipboard.writeText('allankimm09@gmail.com');cp.textContent='Copied'}catch(e){cp.textContent='allankimm09@gmail.com'}setTimeout(()=>cp.textContent='Copy email',2200)};
+const fm=$('form[name=contact]'),st=$('#status');fm.addEventListener('submit',async e=>{e.preventDefault();const b=fm.querySelector('button');b.disabled=true;st.textContent='Sending...';try{const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(fm)).toString()});if(!r.ok)throw 0;fm.reset();st.textContent='Thank you. Your message was sent and I will reply by email soon.'}catch(x){st.textContent='Something went wrong. Please email allankimm09@gmail.com directly.'}b.disabled=false});
+(()=>{
+const VX=240,HY=128,FL=300,CH=1.4,P=(X,Y,Z)=>[VX+FL*X/Z,HY+FL*(CH-Y)/Z],f=n=>Math.round(n*10)/10;
+const pt=p=>p.map(a=>f(a[0])+','+f(a[1])).join(' '),pg=(p,a)=>`<polygon points="${pt(p)}" ${a}/>`,rnd=i=>{const v=Math.sin(i*127.1)*43758.5;return v-Math.floor(v)};
+const C={sky:'#4682b4',building:'#464646',veg:'#6b8e23',road:'#804080',side:'#f423e8',pole:'#999999',light:'#faaa1e',sign:'#dcdc00',car:'#00008e',person:'#dc143c',ego:'#000'};
+const K={car:'#2f80ed',person:'#f2994a',sign:'#eb5757',light:'#f2c94c'},TC={car:'#fff',sign:'#fff',person:'#111',light:'#111'};
+let R='',S='',B='',L='';
+const seg=(c,p)=>{S+=pg(p,`fill="${C[c]}"`)};
+function ann(c,lb,p){const xs=p.map(a=>a[0]),ys=p.map(a=>a[1]),x0=Math.min(...xs),y0=Math.min(...ys),w=Math.max(...xs)-x0,h=Math.max(...ys)-y0,k=K[c];
+return[`<rect class="tr" pathLength="1" x="${f(x0)}" y="${f(y0)}" width="${f(w)}" height="${f(h)}" stroke="${k}"/><g class="lb"><rect x="${f(x0)}" y="${f(y0-9)}" width="${f(lb.length*4.2+6)}" height="9" fill="${k}" stroke="none"/><text x="${f(x0+3)}" y="${f(y0-2.4)}" fill="${TC[c]}" stroke="none">${lb}</text></g>`,
+pg(p,`class="tr" pathLength="1" stroke="${k}" fill="${k}" fill-opacity=".15"`)+p.map(a=>`<circle cx="${f(a[0])}" cy="${f(a[1])}" r="1.7" fill="${k}" stroke="none"/>`).join('')]}
+const thing=(c,lb,p)=>{seg(c,p);const[b,l]=ann(c,lb,p);B+=b;L+=l};
+const g=(a,b,x0,x1)=>[P(x0,0,a),P(x0,0,b),P(x1,0,b),P(x1,0,a)];
+const DEFS='<defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b9bd5"/><stop offset=".45" stop-color="#bcdcf0"/><stop offset="1" stop-color="#f4e6cf"/></linearGradient><radialGradient id="sn" cx="240" cy="120" r="150" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff6d8" stop-opacity=".8"/><stop offset="1" stop-color="#fff6d8" stop-opacity="0"/></radialGradient><linearGradient id="rd" x1="0" y1="128" x2="0" y2="300" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#8b9299"/><stop offset="1" stop-color="#3d4247"/></linearGradient><linearGradient id="fg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".4"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><linearGradient id="hd" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2f34"/><stop offset="1" stop-color="#0d0f11"/></linearGradient><radialGradient id="vg" cx=".5" cy=".5" r=".75"><stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".45"/></radialGradient></defs>';
+R+='<rect width="480" height="300" fill="url(#sk)"/><rect width="480" height="300" fill="url(#sn)"/>';seg('sky',[[0,0],[480,0],[480,300],[0,300]]);
+for(let i=0;i<14;i++){const x=196+i*7,h=8+rnd(i)*22,q=[[x,HY],[x,HY-h],[x+7,HY-h],[x+7,HY]];R+=pg(q,'fill="#9fb0bd"');seg('building',q)}
+function fac(sd,col,wc,H,sd2){const X=6.5*sd,q=(a,b,y,z)=>[P(X,y,a),P(X,y,b),P(X,z,b),P(X,z,a)],p=q(5,90,0,H),m=w=>'M'+w.map(a=>f(a[0])+' '+f(a[1])).join('L')+'Z';R+=pg(p,`fill="${col}"`);seg('building',p);let d='',e='';
+for(let z=6,i=0;z<88;z+=4.5,i++)for(let k=0;k<H/3.2;k++){const w=m(q(z,z+2.4,k?k*3.2+.9:.3,k*3.2+2.6));if(rnd(i*9+k+sd2)>.82)e+=w;else d+=w}
+R+=`<path d="${d}" fill="${wc}"/><path d="${e}" fill="#f2dea2"/>`}
+fac(-1,'#cdbfa9','#3f5566',15,1);fac(1,'#b98068','#34495a',11,5);
+let q=g(2,500,-6.5,-3.5);R+=pg(q,'fill="#b5b0a6"');seg('side',q);q=g(2,500,3.5,6.5);R+=pg(q,'fill="#b5b0a6"');seg('side',q);q=g(2,500,-3.5,3.5);R+=pg(q,'fill="url(#rd)"');seg('road',q);
+R+=pg(g(2,500,-3.65,-3.5),'fill="#d8d3c8"')+pg(g(2,500,3.5,3.65),'fill="#d8d3c8"')+pg(g(3,120,-3.5,-.6),'fill="#000" opacity=".16"')+pg(g(2.4,100,-3.2,-3.08),'fill="#eee"')+pg(g(2.4,100,3.08,3.2),'fill="#eee"');
+for(let z=6.5;z<90;z+=6)R+=pg(g(z,z+3,-.08,.08),'fill="#e9c94a"');
+for(let x=-3;x<=3;x++)R+=pg(g(4.4,5.5,x-.25,x+.25),'fill="#eee"');
+R+='<rect y="100" width="480" height="60" fill="url(#fg)"/>';
+function tree(X,Z,i){const s=FL/Z,[bx,by]=P(X,0,Z),[cx,cy]=P(X,4.3,Z),r=1.9*s,bl=(x,y,rr,n)=>Array.from({length:12},(_,j)=>{const a=j/12*6.283,u=rr*(.85+.2*rnd(i*13+j+n));return[x+u*Math.cos(a),y+u*Math.sin(a)*.9]}),t=[[bx-.15*s,by],[bx-.12*s,cy+r*.5],[bx+.12*s,cy+r*.5],[bx+.15*s,by]],cr=bl(cx,cy,r,0);
+R+=pg(t,'fill="#5a4636"')+pg(cr,'fill="#2f5a2a"')+pg(bl(cx-r*.2,cy-r*.2,r*.7,5),'fill="#4a8a34"')+pg(bl(cx+r*.3,cy-r*.3,r*.4,9),'fill="#6aa646"');seg('veg',t);seg('veg',cr)}
+function pole(X,Z,H,t){t=t||.1;const p=[P(X-t,0,Z),P(X+t,0,Z),P(X+t,H,Z),P(X-t,H,Z)];R+=pg(p,'fill="#596066"');seg('pole',p);
+if(H>5){const d=Math.sign(X),a=[P(X,H-.15,Z),P(X-d*1.3,H-.15,Z),P(X-d*1.3,H+.05,Z),P(X,H+.05,Z)];R+=pg(a,'fill="#596066"');seg('pole',a)}}
+const CAR=[[-.85,0],[-.85,.32],[-.92,.4],[-.92,.85],[-.8,.95],[-.68,.98],[-.55,1.42],[.55,1.42],[.68,.98],[.8,.95],[.92,.85],[.92,.4],[.85,.32],[.85,0]];
+function car(X,Z,fr,col,lb){const s=FL/Z,[cx,by]=P(X,0,Z),T=a=>a.map(([x,y])=>[cx+x*s,by-y*s]);
+R+=`<ellipse cx="${f(cx)}" cy="${f(by)}" rx="${f(1.15*s)}" ry="${f(.15*s)}" fill="#000" opacity=".35"/>`+pg(T(CAR),`fill="${col}"`)+pg(T([[-.62,1],[-.52,1.36],[.52,1.36],[.62,1]]),'fill="#1f2b34"')+pg(T([[-.62,1],[-.5,1.36],[-.1,1.36],[-.22,1]]),'fill="#fff" opacity=".13"')+pg(T([[-.55,0],[.55,0],[.55,.26],[-.55,.26]]),'fill="#14171a"')
++[-1,1].map(d=>pg(T([[d*.85,0],[d*.55,0],[d*.55,.32],[d*.85,.32]]),'fill="#16181b"')+pg(T([[d*.9,.62],[d*.62,.62],[d*.62,.78],[d*.9,.78]]),`fill="${fr?'#f6f2dc':'#e5322d'}"`)).join('')+pg(T([[-.26,.42],[.26,.42],[.26,.55],[-.26,.55]]),'fill="#e8e8e8"');thing('car',lb,T(CAR))}
+function light(X,Z){const s=FL/Z;pole(X,Z,4.4,.08);const b=[P(X-.2,4.3,Z),P(X+.2,4.3,Z),P(X+.2,3,Z),P(X-.2,3,Z)];R+=pg(b,'fill="#1d2126"');
+[['#ff3b30',3.95,1],['#4a3a10',3.65,0],['#123a1a',3.35,0]].forEach(([c,y,on])=>{const o=P(X,y,Z);if(on)R+=`<circle cx="${f(o[0])}" cy="${f(o[1])}" r="${f(.24*s)}" fill="${c}" opacity=".35"/>`;R+=`<circle cx="${f(o[0])}" cy="${f(o[1])}" r="${f(.09*s)}" fill="${c}"/>`});thing('light','traffic light',b)}
+function sign(X,Z){const s=FL/Z;pole(X,Z,3.3,.06);const[cx,cy]=P(X,2.7,Z),r=.55*s,d=[[cx,cy-r],[cx+r,cy],[cx,cy+r],[cx-r,cy]];R+=pg(d,'fill="#c8d62b"')+pg(d.map(a=>[cx+(a[0]-cx)*.82,cy+(a[1]-cy)*.82]),'fill="none" stroke="#111" stroke-width="1"');thing('sign','sign',d)}
+tree(-5,40,1);pole(-4.4,34,7);tree(5,30,2);car(1.75,30,0,'#2b3440','car 3');tree(-5,22,3);pole(4.4,20,7);tree(5,14,4);light(4.4,12);tree(-5,10,5);car(-1.75,8.5,1,'#b03a3a','car 2');car(1.75,6.8,0,'#d5d8dc','car 1');sign(-4.3,6);
+q=[[0,300],[0,284],[110,272],[370,272],[480,284],[480,300]];R+=pg(q,'fill="url(#hd)"');seg('ego',q);
+const HULL=[[-.08,1.73],[0,1.76],[.08,1.73],[.12,1.58],[.17,1.5],[.2,1.2],[.21,.95],[.15,.7],[.26,.02],[.26,0],[-.26,0],[-.26,.02],[-.15,.7],[-.21,.95],[-.2,1.2],[-.17,1.5],[-.12,1.58]];
+const PS=FL/4.9,PY=P(0,0,4.9)[1],T=a=>a.map(([x,y])=>[x*PS,-y*PS]);
+const PED=[[110,74,'#e0772a','#2b3a55'],[400,-66,'#2a9d8f','#4a4f57']];
+PED.forEach(([x0,v,jk,pn],k)=>{const tr=`data-k="${k}" transform="translate(${x0} ${f(PY)})` ,h=T(HULL),dr=Math.sign(v);
+const leg=(sg,o)=>`<g data-r="${14*sg}" data-pv="${f(-.9*PS)}" opacity="${o}">`+pg(T([[-.07,.9],[.07,.9],[.06,.06],[-.06,.06]]),`fill="${pn}"`)+pg(T([[-.06,.07],[.14,.07],[.14,0],[-.06,0]]),'fill="#181a1d"')+'</g>';
+const arm=(sg,o)=>`<g data-r="${-16*sg}" data-pv="${f(-1.45*PS)}" opacity="${o}">`+pg(T([[-.04,1.46],[.04,1.46],[.035,.95],[-.035,.95]]),`fill="${jk}"`)+'</g>';
+R+=`<g ${tr}><ellipse rx="${f(.4*PS)}" ry="${f(.07*PS)}" fill="#000" opacity=".3"/><g transform="scale(${dr} 1)">`+leg(-1,.85)+arm(-1,.8)+leg(1,1)+pg(T([[-.13,1.5],[.13,1.5],[.12,.88],[-.12,.88]]),`fill="${jk}"`)+arm(1,1)+`<circle cy="${f(-1.63*PS)}" r="${f(.1*PS)}" fill="#c68a5b"/><ellipse cy="${f(-1.68*PS)}" rx="${f(.105*PS)}" ry="${f(.06*PS)}" fill="#2a1d15"/></g></g>`;
+S+=`<g ${tr}>`+pg(h,`fill="${C.person}"`)+'</g>';const[b,l]=ann('person','person '+(k+1),h);B+=`<g ${tr}>${b}</g>`;L+=`<g ${tr}>${l}</g>`});
+R+='<rect width="480" height="300" fill="url(#vg)"/><circle cx="14" cy="14" r="3.5" fill="#e5484d"/><text x="22" y="17.5" fill="#fff" font-family="Arial" font-size="8" font-weight="700">REC</text>';
+svg.innerHTML=DEFS+`<g>${R}</g><g class="l l-seg" style="fill-opacity:.8">${S}</g><g class="l l-poly" fill="none" stroke-width="1.4">${L}</g><g class="l l-box" fill="none" stroke-width="1.6" font-family="Arial" font-size="7" font-weight="700">${B}</g>`;
+const mv=[0,1].map(k=>[...svg.querySelectorAll(`[data-k="${k}"]`)]),sw=[0,1].map(k=>[...svg.querySelectorAll(`[data-k="${k}"] [data-r]`)]);
+const tick=t=>{const s=t/1000;PED.forEach(([x0,v],k)=>{const x=(((x0+v*s)%540)+540)%540-30,ph=s*6+k*2;mv[k].forEach(e=>e.setAttribute('transform',`translate(${f(x)} ${f(PY)})`));sw[k].forEach(e=>e.setAttribute('transform',`rotate(${f(+e.dataset.r*Math.sin(ph))} 0 ${e.dataset.pv})`))});if(!rm)requestAnimationFrame(tick)};
+requestAnimationFrame(tick);
+})();
+const lifts=$$('.tile,.case,.job,.box');lifts.forEach(e=>e.classList.add('lift'));
+lifts.forEach(e=>{
+e.addEventListener('pointerenter',v=>{if(v.pointerType!=='touch')e.classList.add('up')});
+e.addEventListener('pointermove',v=>{if(v.pointerType==='touch'||rm)return;const r=e.getBoundingClientRect(),x=(v.clientX-r.left)/r.width,y=(v.clientY-r.top)/r.height;e.style.setProperty('--rx',((.5-y)*12).toFixed(1)+'deg');e.style.setProperty('--ry',((x-.5)*12).toFixed(1)+'deg');e.style.setProperty('--mx',(x*100).toFixed(0)+'%');e.style.setProperty('--my',(y*100).toFixed(0)+'%')});
+e.addEventListener('pointerleave',()=>{e.classList.remove('up');e.style.removeProperty('--rx');e.style.removeProperty('--ry');e.style.removeProperty('--mx');e.style.removeProperty('--my')});
+e.addEventListener('pointerdown',v=>{if(v.pointerType==='touch')e.classList.add('up')});
+['pointerup','pointercancel'].forEach(n=>e.addEventListener(n,v=>{if(v.pointerType==='touch')setTimeout(()=>e.classList.remove('up'),400)}));
+});
+if(matchMedia('(hover:none)').matches&&!rm){const mio=new IntersectionObserver(es=>es.forEach(x=>x.target.classList.toggle('mid',x.isIntersecting)),{rootMargin:'-42% 0px -42% 0px'});lifts.forEach(e=>mio.observe(e))}
+})();
+</script>
+</body>
+</html>
