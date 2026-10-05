@@ -55,6 +55,7 @@ p{margin:0 0 14px;max-width:66ch}
 #scene{display:block;width:100%;height:auto;border-radius:8px}
 .l{opacity:0;transition:opacity .4s}.l-seg{clip-path:inset(0 100% 0 0);transition:clip-path 1.4s ease,opacity .4s}.l .tr{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.3s ease}.lb{opacity:0;transition:opacity .3s}
 #scene[data-mode=box] .l-box,#scene[data-mode=poly] .l-poly,#scene[data-mode=seg] .l-seg{opacity:1}#scene[data-mode=seg] .l-seg{clip-path:inset(0 0 0 0)}#scene[data-mode=box] .l-box .tr,#scene[data-mode=poly] .l-poly .tr{stroke-dashoffset:0}#scene[data-mode=box] .lb{opacity:1;transition-delay:1s}
+@media (max-width:600px){.l-seg{clip-path:none;transition:opacity .4s}#scene[data-mode=seg] .l-seg{clip-path:none}}
 #cap{font-size:.9rem;margin:10px 2px 6px;color:var(--h-muted);min-height:1.5em}
 .legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.82rem;color:var(--h-muted)}
 .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px}
@@ -144,7 +145,7 @@ footer .bg-credit{display:none;font-size:.75rem}
 <span class="role">AI data specialist</span>
 <h1>Allan Kimosop Kipkemboi</h1>
 <p class="lead">I build and quality-check the training data behind language, vision, and speech models: LLM evaluation, RLHF, and multimodal annotation.</p>
-<div class="btns"><a class="btn primary" href="resume.pdf">Download CV</a><a class="btn ghost" href="#contact">Get in touch</a></div>
+<div class="btns"><a class="btn primary" href="Allan%20Kimosop%20Kipkemboi%20-%20CV.pdf" download>Download CV</a><a class="btn ghost" href="#contact">Get in touch</a></div>
 </div>
 <div class="demo" aria-label="Interactive annotation demo">
 <div class="modes" role="group" aria-label="Annotation type">
@@ -220,13 +221,12 @@ footer .bg-credit{display:none;font-size:.75rem}
 <div>
 <h2>Let's work together</h2>
 <p>Open to AI data, LLM evaluation, and annotation roles, remote or on contract.</p>
-<ul class="links"><li><a href="mailto:allankimm09@gmail.com">allankimm09@gmail.com</a></li><li><a href="tel:+254745956337">+254 745 956 337</a></li><li><a href="https://www.linkedin.com/in/allankipkemboi-55bb81358" rel="noopener">LinkedIn profile</a></li></ul>
+<ul class="links"><li><a href="mailto:allankimm09@gmail.com">allankimm09@gmail.com</a></li><li><a href="tel:+254745956337">+254 745 956 337</a></li><li><a href="https://www.linkedin.com/in/allan-kipkemboi-55bb81358/" rel="noopener">LinkedIn profile</a></li></ul>
 <button class="btn ghost" id="copy" type="button">Copy email</button>
 </div>
-<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-<input type="hidden" name="form-name" value="contact">
-<input type="hidden" name="subject" value="New message from your portfolio website">
-<p hidden><label>Leave this empty<input name="bot-field"></label></p>
+<form name="contact" method="POST" action="https://formspree.io/f/maeqyqgg">
+<input type="hidden" name="_subject" value="New message from your portfolio website">
+<p hidden><label>Leave this empty<input name="_gotcha"></label></p>
 <label>Name<input type="text" name="name" required autocomplete="name"></label>
 <label>Email<input type="email" name="email" required autocomplete="email"></label>
 <label>Message<textarea name="message" rows="5" required></textarea></label>
@@ -269,7 +269,7 @@ const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)retur
 $$('[data-to]').forEach(el=>{if(!rm)el.textContent='0';cio.observe(el)});
 $$('.f').forEach(b=>b.onclick=()=>{$$('.f').forEach(x=>x.setAttribute('aria-pressed',x===b));const c=b.dataset.f;$$('.case').forEach(a=>a.hidden=!(c==='all'||a.dataset.c===c))});
 const cp=$('#copy');cp.onclick=async()=>{try{await navigator.clipboard.writeText('allankimm09@gmail.com');cp.textContent='Copied'}catch(e){cp.textContent='allankimm09@gmail.com'}setTimeout(()=>cp.textContent='Copy email',2200)};
-const fm=$('form[name=contact]'),st=$('#status');fm.addEventListener('submit',async e=>{e.preventDefault();const b=fm.querySelector('button');b.disabled=true;st.textContent='Sending...';try{const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(fm)).toString()});if(!r.ok)throw 0;fm.reset();st.textContent='Thank you. Your message was sent and I will reply by email soon.'}catch(x){st.textContent='Something went wrong. Please email allankimm09@gmail.com directly.'}b.disabled=false});
+const fm=$('form[name=contact]'),st=$('#status');fm.addEventListener('submit',async e=>{e.preventDefault();const b=fm.querySelector('button');b.disabled=true;st.textContent='Sending...';try{const r=await fetch(fm.action,{method:'POST',headers:{Accept:'application/json'},body:new FormData(fm)});if(!r.ok)throw 0;fm.reset();st.textContent='Thank you. Your message was sent and I will reply by email soon.'}catch(x){st.textContent='Something went wrong. Please email allankimm09@gmail.com directly.'}b.disabled=false});
 (()=>{
 const VX=240,HY=128,FL=300,CH=1.4,P=(X,Y,Z)=>[VX+FL*X/Z,HY+FL*(CH-Y)/Z],f=n=>Math.round(n*10)/10;
 const pt=p=>p.map(a=>f(a[0])+','+f(a[1])).join(' '),pg=(p,a)=>`<polygon points="${pt(p)}" ${a}/>`,rnd=i=>{const v=Math.sin(i*127.1)*43758.5;return v-Math.floor(v)};
